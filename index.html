@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ready to Antwerp?</title>
+
+<!--
+  ============================================================================
+  READY TO ANTWERP?  —  CONNECT page (home)
+  ----------------------------------------------------------------------------
+  This is one of four pages: index.html (Connect), concept.html, create.html,
+  bibliography.html. They share assets/style.css and assets/app.js.
+  HOW TO EDIT THE WORDS (for non-coders):
+   • All the Connect text lives in this file, top to bottom, in the same order
+     it appears on the page. Look for the big banners like  <!== MEET TEAM ==>.
+   • To change wording, only edit the text BETWEEN the tags, e.g.
+        <p class="prose">change THIS text</p>
+     Do NOT change the tags themselves (the <p ...> and </p> bits) or the
+     words in class="...". Those control the layout.
+   • To swap a picture, drop a new file into the /img folder with the SAME
+     name, or change the file name inside  src="img/....png".
+  ============================================================================
+-->
+
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body data-page="connect">
+
+<!-- ===================== MOBILE MENU BUTTON ===================== -->
+<button class="menu-btn" id="menuBtn" aria-label="Open section menu">
+  <span class="bars"><i></i><i></i><i></i></span> Sections
+</button>
+
+<!-- ============================================================== -->
+<!--  SIDEBAR  /  TABLE OF CONTENTS                                  -->
+<!-- ============================================================== -->
+<nav class="toc" id="toc" aria-label="Page sections">
+  <ul>
+    <li class="grp" data-group="connect">
+      <a class="grp-link" href="index.html">CONNECT</a>
+      <ul class="sub">
+        <li><a href="#meet-team">Meet team</a></li>
+        <li><a href="#briefing">Briefing / Problem</a></li>
+        <li><a href="#the-goal">Current / desired situation</a></li>
+        <li><a href="#stakeholders">Stakeholder and target audience</a></li>
+        <li><a href="#field-research">Field research</a></li>
+        <li><a href="#insight-cards">Insight cards</a></li>
+        <li><a href="#research-2">Research 2.0</a></li>
+        <li><a href="#assumptions">Assumptions</a></li>
+        <li><a href="#gamification">Gamification</a></li>
+      </ul>
+    </li>
+    <li class="grp" data-group="concept">
+      <a class="grp-link" href="concept.html">CONCEPT</a>
+      <ul class="sub">
+        <li><a href="#merging-concepts">Merging concepts</a></li>
+        <li><a href="#hmw-question">HMW question</a></li>
+        <li><a href="#gigamapping">Gigamapping</a></li>
+        <li><a href="#design-principles">Design principles</a></li>
+        <li><a href="#brainstorming">Brainstorming</a></li>
+        <li><a href="#five-w">5 W-questions</a></li>
+        <li><a href="#user-journey">User journey</a></li>
+        <li><a href="#collaborations">Collaborations</a></li>
+      </ul>
+    </li>
+    <li class="grp" data-group="create">
+      <a class="grp-link" href="create.html">CREATE</a>
+      <ul class="sub">
+        <li><a href="#visual-style">Visual style</a></li>
+        <li><a href="#prototype-test">Prototype test</a></li>
+        <li><a href="#feedback">Feedback &amp; improvements</a></li>
+        <li><a href="#social-campaign">Social media campaign</a></li>
+        <li><a href="#tangibles">Tangibles</a></li>
+        <li><a href="#next-steps">Next steps</a></li>
+      </ul>
+    </li>
+    <li class="grp" data-group="biblio">
+      <a class="grp-link" href="bibliography.html">BIBLIOGRAPHY</a>
+      <ul class="sub"></ul>
+    </li>
+  </ul>
+</nav>
+
+<div class="page">
+<div class="wrap">
+
+  <!-- =========================================================== -->
+  <!--  HERO                                                        -->
+  <!-- =========================================================== -->
+  <header class="hero">
+    <div class="hero-row">
+      <img class="side l" src="img/illustrations/group_color_1.png" alt="">
+      <img class="hero-logo" src="img/logo.png" alt="Ready to Antwerp?">
+      <img class="side r" src="img/illustrations/group_color_2.png" alt="">
+    </div>
+    <div class="hook reveal">
+      <h2><span class="ul">Still waiting</span> for that city trip your friendgroup talked about?</h2>
+      <p class="prose center">Ready to Antwerp transforms trip planning into a social game. Friends compete in mini-games, share their preferences, align their availability and unlock rewards, making it easier to organise a city trip to Antwerp together. By turning planning into a fun and collaborative experience, the platform helps groups move from discussing a trip to actually taking one.</p>
+    </div>
+  </header>
+
+  <!-- =========================================================== -->
+  <!--  CONNECT (title)                                             -->
+  <!-- =========================================================== -->
+  <section class="sec glow" id="connect" data-section data-group="connect" style="--glow:rgba(255,125,60,.28); padding-bottom:20px;">
+    <h2 class="h-xl">CONNECT</h2>
+  </section>
+
+  <!-- ==================== MEET TEAM ==================== -->
+  <section class="sec" id="meet-team" data-section data-group="connect" style="padding-top:10px;">
+    <h3 class="h-mid">Meet team</h3>
+    <div class="team reveal">
+      <!-- each member = burst behind + cut-out photo + name pill -->
+      <figure class="member">
+        <div class="badge"><img class="burst" src="img/team/bursts/pow.png" alt=""><img class="face" src="img/team/chiara.png" alt="Chiara"></div>
+        <figcaption class="name-pill" style="background:var(--lime)">Chiara</figcaption>
+      </figure>
+      <figure class="member">
+        <div class="badge"><img class="burst" src="img/team/bursts/ugly_cloud.png" alt=""><img class="face" src="img/team/alex.png" alt="Alex"></div>
+        <figcaption class="name-pill" style="background:var(--blue)">Alex</figcaption>
+      </figure>
+      <figure class="member">
+        <div class="badge"><img class="burst" src="img/team/bursts/flower.png" alt=""><img class="face" src="img/team/daphne.png" alt="Daphne"></div>
+        <figcaption class="name-pill" style="background:var(--pink)">Daphne</figcaption>
+      </figure>
+      <figure class="member">
+        <div class="badge"><img class="burst" src="img/team/bursts/asterisco.png" alt=""><img class="face" src="img/team/stephanie.png" alt="Stephanie"></div>
+        <figcaption class="name-pill" style="background:var(--orange)">Stephanie</figcaption>
+      </figure>
+      <figure class="member">
+        <div class="badge"><img class="burst" src="img/team/bursts/boom.png" alt=""><img class="face" src="img/team/wiki.png" alt="Wiktoria"></div>
+        <figcaption class="name-pill" style="background:var(--lime)">Wiktoria</figcaption>
+      </figure>
+      <figure class="member">
+        <div class="badge"><img class="burst" src="img/team/bursts/star.png" alt=""><img class="face" src="img/team/seoyoon.png" alt="Seoyoon"></div>
+        <figcaption class="name-pill" style="background:var(--green)">Seoyoon</figcaption>
+      </figure>
+    </div>
+
+    <!-- ==================== HEYY THERE intro ==================== -->
+    <div class="intro-block reveal">
+      <p class="eyebrow">Heyy there!</p>
+      <p class="prose">We are third-year Communication and Multimedia Design students at Rotterdam University of Applied Sciences. This project was created in collaboration with Digital Design and Development (Devine) students from Howest University of Applied Sciences and our client, Visit Antwerp. The project began with three multidisciplinary teams, each developing a unique concept. Following this phase, the CMD students were <em>merged into a new team</em> to start reconcepting and further develop and refine the final concept presented here.</p>
+    </div>
+  </section>
+
+  <!-- ==================== BRIEFING / PROBLEM ==================== -->
+  <section class="sec glow" id="briefing" data-section data-group="connect" style="--glow:rgba(0,215,125,.22);">
+    <div class="bubbles reveal">
+      <div class="bubble bubble--brief">
+        <h3>Briefing</h3>
+        <p class="prose">Visit Antwerp wants to attract more Young Urban Travellers (18–36) to choose Antwerp for a multiday city trip. This audience actively avoids traditional tourism marketing and is more influenced by friends and social media than by official channels. The challenge was to create an innovative, digital-first concept that feels authentic and encourages them to discover Antwerp.</p>
+      </div>
+      <div class="bubble bubble--prob">
+        <img class="choco" src="img/illustrations/mascotte/chocolate_color.png" alt="">
+        <h3>Problem</h3>
+        <p class="prose">Through research and our own experiences, we found that most city trip ideas never make it beyond the group chat. While friend groups are excited to travel together, planning often becomes frustrating due to conflicting schedules, different interests and a lack of coordination. As a result, one person ends up organising everything or the trip never happens at all. The real challenge is not convincing people to visit Antwerp, but to remove the coordination friction that stops great trips from happening in the first place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== THE GOAL (phones) ==================== -->
+  <section class="sec" id="the-goal" data-section data-group="connect">
+    <h3 class="h-mid" style="text-align:center;">The goal</h3>
+    <div class="goal reveal">
+      <div class="goal-side">
+        <h4>Current situation</h4>
+        <div class="goal-pair">
+          <img class="phone phone--current" src="img/chat/current_chat.png" alt="A chaotic group chat that never decides on a trip">
+          <ul class="goal-list">
+            <li>One person does everything</li>
+            <li>Left on read</li>
+            <li>"Free whenever" = never</li>
+            <li>Calls that never happen</li>
+            <li>Endless back-and-forth</li>
+            <li>Energy fades fast</li>
+            <li>Too many opinions</li>
+            <li>Dies in the group chat</li>
+          </ul>
+        </div>
+      </div>
+
+      <svg class="goal-arrow" viewBox="0 0 120 70" fill="none" aria-hidden="true">
+        <path d="M6 42 C 44 8, 80 8, 112 34" stroke="#141410" stroke-width="3" stroke-linecap="round"/>
+        <path d="M99 23 L113 34 L100 47" stroke="#141410" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+      <div class="goal-side">
+        <h4>Desired situation</h4>
+        <div class="goal-pair">
+          <img class="phone phone--desired" src="img/chat/desired_chat.png" alt="The same group chat, now planning the trip through the app">
+          <ul class="goal-list">
+            <li>One link, no effort</li>
+            <li>Fast, no download</li>
+            <li>Planning becomes a game</li>
+            <li>Friendly competition</li>
+            <li>Friends nudge friends</li>
+            <li>Preferences, no arguing</li>
+            <li>Real discounts to go</li>
+            <li>Out of the group chat</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STAKEHOLDERS & TARGET AUDIENCE ==================== -->
+  <section class="sec glow" id="stakeholders" data-section data-group="connect" style="--glow:rgba(255,130,220,.20);">
+    <div class="stake reveal">
+    <div class="stake-top">
+      <img class="stake-illo" src="img/illustrations/puzzle.png" alt="">
+      <h2 class="stake-title">Stakeholders &amp;<br>Target Audience</h2>
+    </div>
+    <div class="stake-cluster">
+      <img class="sp sp-initiative" src="img/pills_stakeholders_TA/Initiative_taker.png" alt="Initiative taker">
+      <img class="sp sp-local" src="img/pills_stakeholders_TA/Local_business.png" alt="Local businesses">
+      <img class="sp sp-city" src="img/pills_stakeholders_TA/City_of_Antwerp.png" alt="City of Antwerp">
+      <img class="sp sp-friend" src="img/pills_stakeholders_TA/Friend_groups.png" alt="Friend groups">
+    </div>
+    <div class="stake-text">
+      <p class="prose">We focused on one <span class="ul">target audience</span>: friend groups, primarily <em>Gen Z and zillennials</em>, who regularly take city trips together. As students or young professionals at the start of their careers, they often have the time and desire to travel but are limited by a modest budget, making a nearby destination such as Antwerp an attractive option. While the entire friend group is part of the experience, the platform is <em>specifically</em> designed to support the initiative taker who usually drives the planning process. These travellers value authentic experiences and trust recommendations from friends more than traditional tourism marketing.</p>
+      <p class="prose">Ready to Antwerp connects three key <span class="ul">stakeholders</span>: Visit Antwerp, local businesses and young travellers. Visit Antwerp benefits from increased visibility and city visits, while local businesses gain exposure through rewards and discounts offered within the platform. For travellers, the platform simplifies trip planning and creates personalised experiences based on their interests. Together, these stakeholders contribute to an ecosystem that encourages more young people to discover Antwerp.</p>
+    </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE THEMES ==================== -->
+  <section class="sec" id="experience-themes" data-section data-group="connect">
+    <h3 class="h-mid" style="text-align:center;">Experience themes</h3>
+    <div class="themes reveal">
+      <!-- 5 themes point to a Visit-Antwerp theme; sports is card-only -->
+      <div class="theme">
+        <img class="card" src="img/themes/button_culture.png" alt="Culture">
+        <div class="to"><svg viewBox="0 0 40 56" fill="none"><path d="M20 5 L20 45" stroke="#141410" stroke-width="2.6" stroke-linecap="round"/><path d="M12 36 L20 46 L28 36" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="label">historic heart<br><span class="ul">with a modern beat</span></div>
+      </div>
+      <div class="theme">
+        <img class="card" src="img/themes/button_drinkneat.png" alt="Drink &amp; eat">
+        <div class="to"><svg viewBox="0 0 40 56" fill="none"><path d="M15 45 L15 17 C 15 8, 29 8, 29 17" stroke="#141410" stroke-width="2.6" stroke-linecap="round"/><path d="M8 36 L15 46 L22 36" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="label"><span class="ul">flavours</span></div>
+      </div>
+      <div class="theme">
+        <img class="card" src="img/themes/button_fashion.png" alt="Fashion">
+        <div class="to"><svg viewBox="0 0 40 56" fill="none"><path d="M20 5 C 32 12, 9 17, 20 27 C 31 35, 11 39, 20 46" stroke="#141410" stroke-width="2.6" stroke-linecap="round"/><path d="M13 38 L20 47 L27 38" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="label"><span class="ul">style</span></div>
+      </div>
+      <div class="theme">
+        <img class="card" src="img/themes/button_outdoors.png" alt="Outdoors">
+        <div class="to"><svg viewBox="0 0 40 56" fill="none"><path d="M20 5 L20 45" stroke="#141410" stroke-width="2.6" stroke-linecap="round"/><path d="M12 36 L20 46 L28 36" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="label">city by <span class="ul">the river</span></div>
+      </div>
+      <div class="theme">
+        <img class="card" src="img/themes/button_nightlife.png" alt="Nightlife">
+        <div class="to"><svg viewBox="0 0 40 56" fill="none"><path d="M20 5 c 11 5 -11 9 0 15 c 11 5 -9 9 -1 14" stroke="#141410" stroke-width="2.6" stroke-linecap="round"/><path d="M12 35 L19 45 L27 37" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="label"><span class="ul">24/7 pulse</span></div>
+      </div>
+      <div class="theme">
+        <img class="card" src="img/themes/button_sports.png" alt="Sports">
+        <div class="to"></div>
+        <div class="label"></div>
+      </div>
+    </div>
+    <p class="prose reveal">Ready to Antwerp is built around the experience themes provided by Visit Antwerp. These themes are translated into interest <em>categories</em> that users can select during the planning process, allowing the platform to generate personalised recommendations tailored to the group's preferences. By incorporating all experience themes into the concept, Ready to Antwerp offers something for everyone, making Antwerp an appealing destination for a wide variety of travellers and interests.</p>
+  </section>
+
+  <!-- ==================== RESEARCH ==================== -->
+  <section class="sec glow" id="research" data-section data-group="connect" style="--glow:rgba(85,150,255,.20);">
+    <h2 class="h-xl">Research</h2>
+    <div class="research-intro reveal">
+      <div>
+        <p class="prose" style="margin-left:0;">We interviewed 15 different young adults to learn how they discover destinations, organize group activities, and coördinate plans with friends. Our goal was to uncover <em>frustrations, motivations, and behaviors around planning social trips</em>. These findings helped us identify opportunities to make group trip planning more spontaneous, collaborative, and enjoyable.</p>
+      </div>
+      <img class="illo" src="img/illustrations/high_five.png" alt="">
+    </div>
+
+    <div class="rq reveal" style="max-width:660px; margin:24px auto 0;">
+      <h4>Research questions</h4>
+      <ul>
+        <li>What matters most to you about a city trip?</li>
+        <li>What do you want to get out of a trip with friends?</li>
+        <li>How does a trip with your friends usually get started?</li>
+        <li>How involved are you in planning, or do you tend to follow others?</li>
+        <li>How far in advance do you usually plan, and how does that work in a group?</li>
+        <li>What's the hardest part of organising a trip with a group?</li>
+        <li>Where do you look for information when planning a trip?</li>
+        <li>Who or what do you trust most when deciding where to go?</li>
+      </ul>
+    </div>
+
+    <div class="subsec" id="field-research" data-section data-group="connect">
+      <h2 class="h-xl">Field research</h2>
+      <div class="field-grid reveal">
+        <div class="note"><span class="who">Emma, 20</span>"It's not about the place, it's about being with a fun group and stepping away from everyday life."</div>
+        <div class="note"><span class="who">Lars, 20</span>"I could go to some fries village with you, it doesn't matter where. It's about the fun, not the place."</div>
+        <div class="note"><span class="who">Sofie, 20</span>"It starts months in advance. Someone sends a message in the group chat just to see who's in…"</div>
+        <div class="note"><span class="who">Niels, 18</span>"I usually go on trips when a friend brings it up, whatever people recommend."</div>
+        <div class="note"><span class="who">Anouk, 20</span>"I just go with the flow. I hear about trips from friends, then I join."</div>
+        <div class="note"><span class="who">Thomas, 20</span>"What I want out of a trip? Just good memories."</div>
+        <div class="note"><span class="who">Julie, 18</span>"If the group's close, I could be a lot more spontaneous."</div>
+        <div class="note"><span class="who">Daan, 20</span>"I find places through TikTok, Instagram, and friends."</div>
+        <div class="note"><span class="who">Lotte, 21</span>"I'd rather hear where to go from other people than from an official website."</div>
+        <div class="note"><span class="who">Sven, 19</span>"Planning with a big group is hard, there's always a lot of back-and-forth."</div>
+        <div class="note"><span class="who">Fenne, 18</span>"I like to plan ahead, but with the group it ends up last-minute."</div>
+        <div class="note"><span class="who">Robin, 21</span>"A good city trip in three words? Fun, music, friends."</div>
+      </div>
+    </div>
+
+    <div class="subsec" id="insight-cards" data-section data-group="connect">
+      <h2 class="h-xl">Insight cards</h2>
+      <div class="insight-wrap reveal">
+        <div class="insight-desc">
+          <p class="prose" style="margin:0;">Following our field research and desk research, each of the three teams created its own set of insight cards based on the collected findings. After the teams were merged, we compared the different insights, combined overlapping observations and refined them where necessary. This resulted in a shared set of insight cards that started the second research phase.</p>
+        </div>
+        <div class="insight-grid">
+          <div class="insight">"There's always one organiser, and they're tired of it."</div>
+          <div class="insight">"Enthusiasm is high, commitment is low."</div>
+          <div class="insight">"Finding a date is the hardest single step."</div>
+          <div class="insight">"They don't trust official tourism, they trust the group chat."</div>
+          <div class="insight">"They remember the moments together, not the sights."</div>
+          <div class="insight">"A bit of competition or a reward gets them moving."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RESEARCH 2.0 ==================== -->
+  <section class="sec" id="research-2" data-section data-group="connect">
+    <h2 class="h-xl">Research 2.0</h2>
+    <p class="prose reveal">After the initial research phase during the face-to-face week with the Devine students in Rotterdam, we identified several topics that needed further exploration, including reward systems, user motivation and the role of the initiative taker. We therefore conducted additional desk research to better understand how these factors influence participation and decision-making within friend groups. The insights gained from this research were used to refine the gamification, reward structure and collaborative planning features of Ready to Antwerp.</p>
+    <div class="r2-grid reveal">
+      <figure class="r2-item"><img src="img/Research_2.0/Initiative_taker.png" alt="Initiative taker"><figcaption>Initiative taker</figcaption></figure>
+      <figure class="r2-item"><img src="img/Research_2.0/Motivation.png" alt="Motivation"><figcaption>Motivation</figcaption></figure>
+      <figure class="r2-item"><img src="img/Research_2.0/Rewardsystem.png" alt="Reward system"><figcaption>Reward system</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ==================== ASSUMPTIONS ==================== -->
+  <section class="sec" id="assumptions" data-section data-group="connect">
+    <h2 class="h-xl">Assumptions</h2>
+    <p class="prose reveal">Due to the limited timeframe of this project, not all aspects of the concept could be validated through user research. To support our findings, we conducted additional desk research. We began with a number of assumptions about our concept and explored these further to better understand our target audience and guide our design decisions.</p>
+
+    <div class="assume-wrap reveal">
+      <img class="click-hint" src="img/illustrations/click.png" alt="">
+
+<!-- ---- A1 ---- -->
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-badge">A1</span>
+          <span class="acc-bar"><span class="t">"City trips don't make it out of the group chat"</span>
+            <svg class="acc-chev" viewBox="0 0 24 24" fill="none"><path d="M5 9 l7 7 7-7" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <h5 style="margin-top:0;">The Social Soul of Urban Travel</h5>
+          <ul>
+            <li><span class="lead">Concept Support:</span> Our concept is built on creating a shared group experience. This research confirms that city trips are inherently social, with the vast majority of leisure travelers choosing the company of friends or partners. Ignoring the social dimension means ignoring the core motivation of the trip itself. Our tool does not just "add" a chat feature; it designs around pre-existing social connections.</li>
+            <li><span class="lead">Key Insight:</span> Leisure travel is a collective experience. Statistics show that the overwhelming majority of leisure travelers choose to travel with a partner (61%) or friends (33%), with only a small fraction (12%) traveling alone. Traveling with friends is the preferred option for young adults and is positively perceived as a source of happiness and connection.</li>
+          </ul>
+          <h5>References.</h5>
+          <ul>
+            <li>Statista. (n.d.). Forecast: Travel companions of leisure travelers in the US. Retrieved from <a href="https://www.statista.com/forecasts/997103/travel-companions-of-leisure-travelers-in-the-us">https://www.statista.com/forecasts/997103/travel-companions-of-leisure-travelers-in-the-us</a></li>
+            <li>Statista. (n.d.). Preference for travel companions in the US by age. Retrieved from <a href="https://www.statista.com/statistics/1261314/preference-for-travel-companions-us-by-age/">https://www.statista.com/statistics/1261314/preference-for-travel-companions-us-by-age/</a></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- ---- A2 ---- -->
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-badge">A2</span>
+          <span class="acc-bar"><span class="t">"What friends remember most is the shared experience, not the sights"</span>
+            <svg class="acc-chev" viewBox="0 0 24 24" fill="none"><path d="M5 9 l7 7 7-7" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <h5 style="margin-top:0;">Building Bonds Through Sharing</h5>
+          <ul>
+            <li><span class="lead">Concept Support:</span> Our concept goes beyond simply booking flights; it aims to create lasting memories for the group. Research proves that actively sharing experiences and memories significantly strengthens social bonds. People value shared memories more than physical gifts. Our tool facilitates the creation of a group narrative right from the planning phase, transforming a logistical task into an opportunity for connection.</li>
+            <li><span class="lead">Key Insight:</span> Sharing experiences and memories significantly strengthens social ties. Research in social psychology indicates that people value shared memories over material gifts, and group experiences lead to closer relationships. This supports our vision of an app that acts not just as a logistical tool, but as an accelerator for social connection through trip co-creation.</li>
+          </ul>
+          <h5>References.</h5>
+          <ul>
+            <li>Association for Psychological Science. (2014). Sharing memories tightens bonds with friends. Retrieved from <a href="https://www.psychologicalscience.org/news/minds-business/sharing-memories-tightens-bonds-with-friends.html">https://www.psychologicalscience.org/news/minds-business/sharing-memories-tightens-bonds-with-friends.html</a></li>
+            <li>Elsevier B.V. (n.d.). ScienceDirect abstract [S221242091730030X]. Retrieved from <a href="https://www.sciencedirect.com/science/article/abs/pii/S221242091730030X">https://www.sciencedirect.com/science/article/abs/pii/S221242091730030X</a></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- ---- A3 ---- -->
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-badge">A3</span>
+          <span class="acc-bar"><span class="t">"Discounts are an effective hook for this audience"</span>
+            <svg class="acc-chev" viewBox="0 0 24 24" fill="none"><path d="M5 9 l7 7 7-7" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <h5 style="margin-top:0;">Beating Planning Stress</h5>
+          <ul>
+            <li><span class="lead">Concept Support:</span> Our platform aims to make planning a 'stress-free' and enjoyable experience. This research documents the frustration many travelers, especially young people, feel during the planning phase—often due to an overload of options and the difficulty of aligning group preferences. Our solution uses gamification and centralization to directly resolve these pain points, turning anxiety into excitement.</li>
+            <li><span class="lead">Key Insight:</span> The planning phase of a group trip is frequently perceived as stressful, with 46% of travelers finding it overwhelming. Group 'planners' (often the initiative-takers) feel pressured, and 38% fear disappointing their friends. This stress is particularly acute among young travelers who struggle to coordinate varying preferences and budgets. There is a clear market need for tools that make this process collaborative and cognitively effortless.</li>
+          </ul>
+          <h5>References.</h5>
+          <ul>
+            <li>Statista. (n.d.). Stressful aspects of travel planning in the US. Retrieved from <a href="https://www.statista.com/statistics/1230198/stressful-aspects-of-travel-planning-us/">https://www.statista.com/statistics/1230198/stressful-aspects-of-travel-planning-us/</a></li>
+            <li>Statista. (n.d.). Reasons for stressful travel planning in the US by age. Retrieved from <a href="https://www.statista.com/statistics/1230206/reasons-for-stressful-travel-planning-us-by-age/">https://www.statista.com/statistics/1230206/reasons-for-stressful-travel-planning-us-by-age/</a></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- ---- A4 ---- -->
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-badge">A4</span>
+          <span class="acc-bar"><span class="t">"A short minigame is an effective hook that pulls people into the flow"</span>
+            <svg class="acc-chev" viewBox="0 0 24 24" fill="none"><path d="M5 9 l7 7 7-7" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <h5 style="margin-top:0;">Gamification as an Engagement Catalyst</h5>
+          <ul>
+            <li><span class="lead">Concept Support:</span> Our 'How Might We' focuses on using minigames to spark excitement. Research fully backs this choice: gamification is a highly effective tool for increasing user engagement and brand loyalty, particularly among Gen Z and Millennials. Transforming logistics into a collaborative game reduces planning stress and creates a positive brand association from the start, directly motivating the booking action.</li>
+            <li><span class="lead">Key Insight:</span> Gamification—the application of game elements in non-game contexts—effectively drives user engagement and loyalty, especially among younger demographics. Introducing collaborative minigames and reward systems (like collective discounts) can turn a tedious logistical phase into a fun experience, encouraging users to interact more with the platform and motivating the final action of booking the trip.</li>
+          </ul>
+          <h5>References.</h5>
+          <ul>
+            <li>Statista. (n.d.). Benefits of gamification among US internet users. Retrieved from <a href="https://www.statista.com/statistics/1220087/gamification-benefits-among-us-internet-users/">https://www.statista.com/statistics/1220087/gamification-benefits-among-us-internet-users/</a></li>
+            <li>Statista. (n.d.). US gamification revenue forecast. Retrieved from <a href="https://www.statista.com/forecasts/1221379/us-gamification-revenue-forecast">https://www.statista.com/forecasts/1221379/us-gamification-revenue-forecast</a></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- ---- A5 ---- -->
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-badge">A5</span>
+          <span class="acc-bar"><span class="t">"YUT will engage with a tool, if it's framed peer-to-peer"</span>
+            <svg class="acc-chev" viewBox="0 0 24 24" fill="none"><path d="M5 9 l7 7 7-7" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <h5 style="margin-top:0;">Trust in Digital Word-of-Mouth</h5>
+          <ul>
+            <li><span class="lead">Concept Support:</span> Our concept relies on authentic recommendations provided by locals through our platform. Research confirms that young travelers distrust traditional marketing channels and instead rely heavily on peer recommendations and authentic experiences. This validates our strategy of using locals as curators of genuine content, creating an experience that our target audience perceives as reliable and real.</li>
+            <li><span class="lead">Key Insight:</span> Young travelers (Gen Z and Millennials) show a strong preference for authentic recommendations from 'locals' or peers over polished tourism marketing. Currently, 73% of Gen Z travelers trust online peer reviews, and 60% are more likely to trust recommendations from friends and family than those from travel agents or sponsored influencers.</li>
+          </ul>
+          <h5>References.</h5>
+          <ul>
+            <li>Statista. (n.d.). Trust in online reviews in the US by age. Retrieved from <a href="https://www.statista.com/statistics/1188371/trust-online-reviews-us-by-age/">https://www.statista.com/statistics/1188371/trust-online-reviews-us-by-age/</a></li>
+            <li>Statista. (n.d.). Trust in leisure travel recommendations in the US by source and age. Retrieved from <a href="https://www.statista.com/statistics/1188402/trust-leisure-travel-recommendations-us-by-source-age/">https://www.statista.com/statistics/1188402/trust-leisure-travel-recommendations-us-by-source-age/</a></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- ---- A6 ---- -->
+      <div class="acc">
+        <button class="acc-head" aria-expanded="false">
+          <span class="acc-badge">A6</span>
+          <span class="acc-bar"><span class="t">"A web app lowers the entry barrier vs a native app for a quick, one-off task"</span>
+            <svg class="acc-chev" viewBox="0 0 24 24" fill="none"><path d="M5 9 l7 7 7-7" stroke="#141410" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <h5 style="margin-top:0;">The Desire for Authenticity and the Local 'Square'</h5>
+          <ul>
+            <li><span class="lead">Concept Support:</span> Our concept offers group discounts and activities rooted in local authenticity (e.g., specific local venues rather than generic tourist traps). Research shows that while young travelers crave authentic, local cultural experiences, they are also highly price-sensitive. Our reward system provides an experiential payoff that guides the group toward genuine city discovery while aligning with their budget needs.</li>
+            <li><span class="lead">Key Insight:</span> There is a strong desire among young travelers to experience local culture deeply during their city trips, with 83% of Gen Z stating it is an important part of traveling. Simultaneously, these travelers are motivated by discounts and special offers. Our platform bridges this gap by offering tangible discounts on authentic local products and activities, incentivizing genuine exploration while driving bookings.</li>
+          </ul>
+          <h5>References.</h5>
+          <ul>
+            <li>Statista. (n.d.). Important trip characteristics for Generation Z travelers in the US. Retrieved from <a href="https://www.statista.com/forecasts/1261301/important-trip-characteristics-generation-z-travelers-us">https://www.statista.com/forecasts/1261301/important-trip-characteristics-generation-z-travelers-us</a></li>
+            <li>Statista. (n.d.). Factors influencing leisure travel bookings in the US. Retrieved from <a href="https://www.statista.com/statistics/1131109/factors-influencing-leisure-travel-bookings-us/">https://www.statista.com/statistics/1131109/factors-influencing-leisure-travel-bookings-us/</a></li>
+          </ul>
+        </div></div>
+      </div>
+    </div><!-- /assume-wrap -->
+  </section>
+
+  <!-- ==================== GAMIFICATION ==================== -->
+  <section class="sec glow" id="gamification" data-section data-group="connect" style="--glow:rgba(210,255,75,.22);">
+    <h2 class="h-xl">Gamification</h2>
+    <p class="prose reveal">To design a minigame that hooks a whole friend group in seconds, we looked at three apps that already master engagement — and decided exactly what to take from each and what to leave behind.</p>
+    <div class="swiper reveal">
+      <button class="swipe-btn prev" type="button" aria-label="Previous card">&#8249;</button>
+      <div class="swipe-viewport">
+        <div class="swipe-track">
+
+          <!-- card 1: Kahoot  (TODO: verify copy against connect_page.png) -->
+          <div class="gcard">
+            <div class="gcard-inner sh-blue">
+              <img class="shot" src="img/Gamification/kahoot.png" alt="Kahoot screen">
+              <div class="gcard-body">
+                <h4>Kahoot!</h4>
+                <p class="gintro">Kahoot turns a room full of individuals into one engaged collective using live timers and real-time competition.</p>
+                <ul>
+                  <li><span class="lead">What's Good:</span> The shared live lobby and the ticking countdown make everyone feel part of the same moment, at the same time.</li>
+                  <li><span class="lead">What We Take:</span> The "Live Lobby" mechanic and the fast-paced timer that pressures quick, gut-feeling decisions — so planning feels less like a survey and more like a game.</li>
+                  <li><span class="lead">What We Leave:</span> The "right vs. wrong" educational focus. Our app is about discovering the group's vibe and preferences, so there are no "wrong" answers, just different outcomes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2: Spotify Wrapped -->
+          <div class="gcard">
+            <div class="gcard-inner sh-orange">
+              <img class="shot" src="img/Gamification/spotify_wrapped.png" alt="Spotify Wrapped card">
+              <div class="gcard-body">
+                <h4>Spotify Wrapped</h4>
+                <p class="gintro">Spotify transforms raw, boring user data into highly aesthetic, personalized "stories" that users actively keep and appreciate.</p>
+                <ul>
+                  <li><span class="lead">What's Good:</span> It uses bold typography, high-contrast colors, and punchy copy to make the user feel seen. The "shareability" is built into the core design.</li>
+                  <li><span class="lead">What We Take:</span> The "Output" phase. When the group finishes the minigame, the app shouldn't just give a boring list of Antwerp locations — it should generate a visual, aesthetic "Squad Vibe Card" that the initiative-taker can screenshot and drop into the group chat.</li>
+                  <li><span class="lead">What We Leave:</span> The yearly delay. Spotify Wrapped happens once a year, while our card is based on the information we gain through the webapp, instantly.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3: Duolingo -->
+          <div class="gcard">
+            <div class="gcard-inner sh-green">
+              <img class="shot" src="img/Gamification/Duolingo.png" alt="Duolingo screen">
+              <div class="gcard-body">
+                <h4>Duolingo</h4>
+                <p class="gintro">Duolingo is the master of keeping users engaged through constant positive reinforcement and micro-animations.</p>
+                <ul>
+                  <li><span class="lead">What's Good:</span> Every single correct action is met with immediate sensory feedback—a satisfying sound effect, a pop-up, or a cheering mascot. It makes pressing buttons physically satisfying.</li>
+                  <li><span class="lead">What We Take:</span> The sensory feedback loop during the minigame. The illustrations and animation are visually pleasing.</li>
+                  <li><span class="lead">What We Leave:</span> The daily streak and guilt-tripping notifications. A travel planning app is high-intent but low-frequency (they plan a trip once every few months). We don't need them to log in every day — we just need them hyper-engaged for 3 minutes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="swipe-btn next" type="button" aria-label="Next card">&#8250;</button>
+      <div class="swipe-dots">
+        <button class="swipe-dot" type="button" aria-label="Go to card 1"></button>
+        <button class="swipe-dot" type="button" aria-label="Go to card 2"></button>
+        <button class="swipe-dot" type="button" aria-label="Go to card 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRANSITION → CONCEPT ==================== -->
+  <div class="transition sec glow" style="--glow:rgba(255,130,220,.30);">
+    <span class="small">go to</span>
+    <a class="big" href="concept.html">Concept</a>
+  </div>
+
+</div><!-- /wrap -->
+</div><!-- /page -->
+
+<script src="assets/app.js"></script>
+</body>
+</html>

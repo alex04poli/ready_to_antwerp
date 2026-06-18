@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"C:/Users/alexl/Downloads/ready_to_antwerp/ready_to_antwerp/img\" 2>/dev/null || cd \"/c/Users/alexl/Downloads/ready_to_antwerp/ready_to_antwerp/img\" *)"
+    ]
+  }
+}
