@@ -504,7 +504,7 @@ body[data-page="concept"] .prose{ text-align:left; }
 
 /* ---- Create tweaks: full-width visual items, bigger mockup, 2-col feedback ---- */
 .vs-item:nth-child(3), .vs-item:nth-child(4){ grid-column:1 / -1; }
-.create-feature{ max-width:min(520px,90%); }
+.create-feature{ max-width:min(800px,90%); }
 .fb-cols{ display:grid; grid-template-columns:var(--split, 1fr 1fr); gap:26px; align-items:center; margin-top:14px; }
 .fb-side{ display:flex; flex-direction:column; gap:14px; justify-content:center; }
 .fb-side .prose{ max-width:none; margin:0; text-align:left; }
@@ -535,3 +535,23 @@ body[data-page="concept"] .prose{ text-align:left; }
 
 /* a bit more vertical space between the visual-style rows */
 .vs-grid{ row-gap:100px; }
+
+/* gamification cards: image source line at the bottom */
+.gcard-src{ margin:14px 0 0; font-size:12.5px; line-height:1.4; color:#8a8a7a; }
+.gcard-src a{ text-decoration:underline; word-break:break-all; color:inherit; }
+
+/* ---- proces card section + phone captions ---- */
+.proces-title{ display:flex; align-items:center; gap:14px; }
+.proces-car{ width:clamp(60px,7vw,84px); flex:0 0 auto; }
+.proces-img{ width:100%; display:block; margin:18px auto 0; }
+.phone-fig{ margin:0; display:flex; flex-direction:column; align-items:center; }
+.phone-cap{ margin-top:8px; font-size:11.5px; line-height:1.3; color:#8a8a7a; text-align:center; max-width:198px; }
+
+/* proces card title centered like the other section titles + bigger car; captions lower */
+.proces-title{ justify-content:center; }
+.proces-car{ width:clamp(72px,10vw,120px); }
+.phone-cap{ margin-top:18px; }
+
+/* insight cards: small right-aligned source under each quote */
+.insight{ flex-direction:column; gap:6px; }
+.insight-src{ align-self:flex-end; text-align:right; font-size:15px; font-style:italic; line-height:1.25; }

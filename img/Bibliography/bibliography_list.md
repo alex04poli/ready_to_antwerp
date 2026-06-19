@@ -79,3 +79,9 @@ Engaging the digital tourist: Experimental evidence on the power of gamified tra
 
 Brooke, J. (1996). SUS: A "quick and dirty" usability scale. In P. W. Jordan, B. Thomas, B. A. Weerdmeester, & I. L. McClelland (Eds.), *Usability evaluation in industry* (pp. 189–194). Taylor & Francis.
 
+**AI use disclaimer**  
+During the project for the city of Antwerp, we used AI tools like ChatGPT, Gemini, Cloud and Canva to support our research proces, generating images and code the one pager.
+
+AI was only used as a tool to support writing, generate images and coding, not to come up with new ideas or replace our own thinking.
+
+We always checked and adjusted the texts and imagery ourself to make sure it still reflects our own ideas and writing style. 
