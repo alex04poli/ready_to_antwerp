@@ -555,3 +555,6 @@ body[data-page="concept"] .prose{ text-align:left; }
 /* insight cards: small right-aligned source under each quote */
 .insight{ flex-direction:column; gap:6px; }
 .insight-src{ align-self:flex-end; text-align:right; font-size:15px; font-style:italic; line-height:1.25; }
+
+/* bibliography: plain paragraph (AI disclaimer) */
+.bib-note{ margin:0 0 12px; font-size:15.5px; line-height:1.5; }
