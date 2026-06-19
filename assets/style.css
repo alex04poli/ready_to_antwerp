@@ -1,13 +1,13 @@
 /* ===========================================================================
    1. FONTS  (the two project fonts, loaded from the /fonts folder)
    =========================================================================== */
-@font-face{font-family:'Pixel';src:url('fonts/Pixelated-Regular.otf') format('opentype');font-display:swap;}
-@font-face{font-family:'Deco';src:url('fonts/Decorative-serif-Ultralight.otf') format('opentype');font-weight:200;font-style:normal;font-display:swap;}
-@font-face{font-family:'Deco';src:url('fonts/Decorative-serif-UltralightItalic.otf') format('opentype');font-weight:200;font-style:italic;font-display:swap;}
-@font-face{font-family:'Deco';src:url('fonts/Decorative-serif-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
-@font-face{font-family:'Deco';src:url('fonts/Decorative-serif-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
-@font-face{font-family:'Deco';src:url('fonts/Decorative-serif-Ultrabold.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap;}
-@font-face{font-family:'Deco';src:url('fonts/Decorative-serif-UltraboldItalic.otf') format('opentype');font-weight:800;font-style:italic;font-display:swap;}
+@font-face{font-family:'Pixel';src:url('../fonts/Pixelated-Regular.otf') format('opentype');font-display:swap;}
+@font-face{font-family:'Deco';src:url('../fonts/Decorative-serif-Ultralight.otf') format('opentype');font-weight:200;font-style:normal;font-display:swap;}
+@font-face{font-family:'Deco';src:url('../fonts/Decorative-serif-UltralightItalic.otf') format('opentype');font-weight:200;font-style:italic;font-display:swap;}
+@font-face{font-family:'Deco';src:url('../fonts/Decorative-serif-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Deco';src:url('../fonts/Decorative-serif-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Deco';src:url('../fonts/Decorative-serif-Ultrabold.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap;}
+@font-face{font-family:'Deco';src:url('../fonts/Decorative-serif-UltraboldItalic.otf') format('opentype');font-weight:800;font-style:italic;font-display:swap;}
 
 /* ===========================================================================
    2. DESIGN TOKENS  (the project palette)
@@ -484,7 +484,7 @@ body[data-page="concept"] .prose{ text-align:left; }
    20. CREATE PAGE
    =========================================================================== */
 /* visual style 2x2 */
-.vs-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px 28px; max-width:960px; margin:20px auto 0; }
+.vs-grid{ display:grid; grid-template-columns:var(--vs-split, 1fr 1fr); gap:24px 28px; max-width:960px; margin:20px auto 0; }
 .vs-item{ background:var(--bg); border:2.5px solid var(--ink); border-radius:18px; padding:16px 18px; box-shadow:var(--shadow-sm); }
 .vs-item h4{ font-weight:800; font-size:17px; margin:0 0 12px; }
 .vs-item img{ width:100%; height:auto; display:block; }
@@ -524,3 +524,14 @@ body[data-page="concept"] .prose{ text-align:left; }
 .ref em{ font-style:italic; }
 .ref a{ text-decoration:underline; word-break:break-word; }
 .ref-note{ font-style:italic; color:#8a8a7a; }
+
+/* ---- late tweaks ---- */
+/* subsection titles in the pixel display font (Pixelated-Regular.otf) */
+.h-mid{ font-family:'Pixel', monospace; }
+/* visual style: remove the card boxes, keep just label + image */
+.vs-item{ background:none; border:0; box-shadow:none; padding:0; }
+/* rotate the 'click' hint beside the assumptions accordion */
+.click-hint{ transform:rotate(-180deg); }
+
+/* a bit more vertical space between the visual-style rows */
+.vs-grid{ row-gap:100px; }
